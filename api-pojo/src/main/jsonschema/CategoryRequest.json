@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "id": "#",
+    "type": "object",
+    "javaType" : "com.peoplepattern.api.CategoryRequest",
+    "javaInterfaces": ["java.io.Serializable"],
+    "properties": {
+        "categoryId": {
+            "type": "string",
+            "required": true
+        }
+    }
+}

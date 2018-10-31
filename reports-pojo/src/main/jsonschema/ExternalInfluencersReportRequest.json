@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "id": "#",
+    "type": "object",
+    "javaType" : "com.peoplepattern.streams.reports.ExternalInfluencersReportRequest",
+    "javaInterfaces": ["java.io.Serializable"],
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "default": "http://schemata.peoplepattern.com/ExternalInfluencersReportRequest.json"
+        },
+        "audience": {
+            "type": "object",
+            "javaType": "com.peoplepattern.reports.Audience"
+        },
+        "benchmark": {
+            "type": "object",
+            "javaType" : "com.peoplepattern.api.Benchmark"
+        }
+    }
+}

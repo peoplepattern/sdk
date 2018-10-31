@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "id": "#",
+    "type": "object",
+    "javaType" : "com.peoplepattern.api.EntitiesRequest",
+    "javaInterfaces": ["java.io.Serializable"],
+    "properties": {
+        "ids": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "ids",
+            "required": true
+        }
+    }
+}

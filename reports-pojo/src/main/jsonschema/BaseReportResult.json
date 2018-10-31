@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.reports.BaseReportResult",
+  "javaInterfaces": ["java.io.Serializable"],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

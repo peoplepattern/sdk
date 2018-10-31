@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.streams.analyze.AnalyzePublicProfilesResult",
+  "javaInterfaces": ["java.io.Serializable"],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "default": "http://schemata.peoplepattern.com/AnalyzePublicProfilesResult.json"
+    }
+  },
+  "additionalProperties": {
+    "javaType": "com.peoplepattern.pdb.Profile"
+  }
+}

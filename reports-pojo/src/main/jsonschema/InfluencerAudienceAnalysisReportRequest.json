@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.streams.reports.InfluencerAudienceAnalysisReportRequest",
+  "javaInterfaces": ["java.io.Serializable"],
+  "extends": {
+    "$ref": "../../../../audience-summary/src/main/jsonschema/AudienceSummaryReportRequest.json"
+  },
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "default": "http://schemata.peoplepattern.com/InfluencerAudienceAnalysisReportRequest.json"
+    },
+    "audience": {
+      "description": "explicit audience supplied by caller or generated with builder",
+      "type": "object",
+      "javaType": "com.peoplepattern.reports.Audience"
+    },
+    "seed": {
+      "description": "explicit seed account declaration supplied by caller",
+      "type": "object",
+      "javaType": "com.peoplepattern.reports.Audience"
+    },
+    "service": {
+      "description": "deprecated, replaced by platform",
+      "type": "string"
+    },
+    "platform": {
+      "description": "choice of social network for influencer and audience",
+      "type": "string",
+      "enum": [
+        "twitter",
+        "youtube"
+      ]
+    },
+    "input_type": {
+      "description": "deprecated, replaced by collection_method",
+      "type": "string"
+    },
+    "sample_size": {
+      "description": "max audience members",
+      "type": "integer"
+    },
+    "max_items": {
+      "description": "alternative for sample_size",
+      "type": "integer"
+    },
+    "twitter_names": {
+      "description": "deprecated, replaced by username",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "username": {
+      "description": "alternative for handle",
+      "type": "string"
+    },
+    "handle": {
+      "description": "handle of influencer account, shortcut for seed.items[0].{handle=...}",
+      "type": "string"
+    },
+    "id": {
+      "description": "pdb id of influencer account, shortcut for seed.items[0].{id=...}",
+      "type": "string"
+    },
+    "collection_method": {
+      "description": "audience collection method",
+      "type": "string",
+      "enum": [
+        "engagers",
+        "followers"
+      ]
+    }
+  }
+}

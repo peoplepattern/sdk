@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.streams.reports.TopFriendsReportRequest",
+  "javaInterfaces": ["java.io.Serializable"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "default": "http://apidocs.peoplepattern.com/TopFriendsReportRequest.json"
+    },
+    "audience": {
+      "type": "object",
+      "javaType": "com.peoplepattern.reports.Audience"
+    }
+  }
+}

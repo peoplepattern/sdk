@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.streams.reports.InfluencerAudienceAnalysisReportResult",
+  "javaInterfaces": ["java.io.Serializable"],
+  "extends": {
+    "$ref": "../../../../../components/reports-traits/src/main/jsonschema/BaseReportResult.json"
+  },
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "default": "http://schemata.peoplepattern.com/InfluencerAudienceAnalysisReportResult.json"
+    },
+    "audience": {
+      "type": "object",
+      "javaType": "com.peoplepattern.reports.Audience"
+    },
+    "seed": {
+      "type": "object",
+      "javaType": "com.peoplepattern.reports.Audience"
+    },
+    "account_type": {
+      "type": "object",
+      "javaType" : "com.peoplepattern.api.FieldAggregation"
+    },
+    "birthyear": {
+      "type": "object",
+      "javaType" : "com.peoplepattern.api.FieldAggregation"
+    },
+    "race": {
+      "type": "object",
+      "javaType" : "com.peoplepattern.api.FieldAggregation"
+    },
+    "gender": {
+      "type": "object",
+      "javaType" : "com.peoplepattern.api.FieldAggregation"
+    },
+    "device": {
+      "type": "object",
+      "javaType" : "com.peoplepattern.api.FieldAggregation"
+    },
+    "os": {
+      "type": "object",
+      "javaType" : "com.peoplepattern.api.FieldAggregation"
+    },
+    "top_domains": {
+      "type": "object",
+      "javaType": "com.peoplepattern.api.Ranking"
+    },
+    "top_hashtags": {
+      "type": "object",
+      "javaType": "com.peoplepattern.api.Ranking"
+    },
+    "top_interests": {
+      "type": "object",
+      "javaType": "com.peoplepattern.api.Ranking"
+    },
+    "top_mentions": {
+      "type": "object",
+      "javaType": "com.peoplepattern.api.Ranking"
+    },
+    "top_global_metro_areas": {
+      "type": "object",
+      "javaType": "com.peoplepattern.api.Ranking"
+    },
+    "top_us_metro_areas": {
+      "type": "object",
+      "javaType": "com.peoplepattern.api.Ranking"
+    }
+  }
+}
