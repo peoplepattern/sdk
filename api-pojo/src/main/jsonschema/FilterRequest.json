@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.api.FilterRequest",
+  "javaInterfaces": ["java.io.Serializable"],
+  "properties": {
+    "index": {
+      "type": "string",
+      "description": "index",
+      "required": false
+    },
+    "type": {
+      "type": "string",
+      "description": "type",
+      "required": false
+    },
+    "ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "ids",
+      "required": true
+    },
+    "audience": {
+      "$ref": "http://schemata.peoplepattern.com/Audience.json"
+    },
+    "limit": {
+      "type": "integer",
+      "description": "limit",
+      "required": false
+    },
+    "queryString": {
+      "type": "string",
+      "description": "queryString",
+      "required": false
+    },
+    "querySource": {
+      "type": "object",
+      "javaType": "com.peoplepattern.api.QuerySource",
+      "description": "querySource",
+      "properties": {
+        "query": {
+          "type": "object",
+          "javaType": "com.peoplepattern.api.QuerySourceQuery",
+          "description": "querySourceQuery"
+        }
+      },
+      "required": false
+    }
+  }
+}

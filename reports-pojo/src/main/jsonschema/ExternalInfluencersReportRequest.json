@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-03/schema",
     "id": "#",
     "type": "object",
-    "javaType" : "com.peoplepattern.streams.reports.ExternalInfluencersReportRequest",
+    "javaType" : "com.peoplepattern.reports.ExternalInfluencersReportRequest",
     "javaInterfaces": ["java.io.Serializable"],
     "additionalProperties": false,
     "properties": {
@@ -11,12 +11,10 @@
             "default": "http://schemata.peoplepattern.com/ExternalInfluencersReportRequest.json"
         },
         "audience": {
-            "type": "object",
-            "javaType": "com.peoplepattern.reports.Audience"
+            "$ref": "http://schemata.peoplepattern.com/Audience.json"
         },
         "benchmark": {
-            "type": "object",
-            "javaType" : "com.peoplepattern.api.Benchmark"
+            "$ref": "http://schemata.peoplepattern.com/Benchmark.json"
         }
     }
 }

@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType": "com.peoplepattern.pdb.settings.AggregationConstraints",
+  "javaInterfaces": [
+    "java.io.Serializable"
+  ],
+  "properties": {
+    "limit": {
+      "type": "integer",
+      "default": 100
+    },
+    "key_regex": {
+      "type": "string"
+    }
+  }
+}

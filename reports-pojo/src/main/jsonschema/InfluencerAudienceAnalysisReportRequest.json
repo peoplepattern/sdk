@@ -2,25 +2,20 @@
   "$schema": "http://json-schema.org/draft-03/schema",
   "id": "#",
   "type": "object",
-  "javaType" : "com.peoplepattern.streams.reports.InfluencerAudienceAnalysisReportRequest",
+  "javaType" : "com.peoplepattern.reports.InfluencerAudienceAnalysisReportRequest",
   "javaInterfaces": ["java.io.Serializable"],
-  "extends": {
-    "$ref": "../../../../audience-summary/src/main/jsonschema/AudienceSummaryReportRequest.json"
-  },
   "properties": {
     "$schema": {
       "type": "string",
       "default": "http://schemata.peoplepattern.com/InfluencerAudienceAnalysisReportRequest.json"
     },
     "audience": {
-      "description": "explicit audience supplied by caller or generated with builder",
-      "type": "object",
-      "javaType": "com.peoplepattern.reports.Audience"
+      "description": "explicit audience supplied by caller",
+      "$ref": "http://schemata.peoplepattern.com/Audience.json"
     },
     "seed": {
       "description": "explicit seed account declaration supplied by caller",
-      "type": "object",
-      "javaType": "com.peoplepattern.reports.Audience"
+      "$ref": "http://schemata.peoplepattern.com/Audience.json"
     },
     "service": {
       "description": "deprecated, replaced by platform",
@@ -68,9 +63,19 @@
     "collection_method": {
       "description": "audience collection method",
       "type": "string",
+      "default": "followers",
       "enum": [
         "engagers",
         "followers"
+      ]
+    },
+    "pull_strategy": {
+      "description": "audience sampling method",
+      "type": "string",
+      "default": "random",
+      "enum": [
+        "random",
+        "recent"
       ]
     }
   }

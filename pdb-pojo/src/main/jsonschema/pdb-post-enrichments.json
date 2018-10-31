@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "type": "object",
+  "javaType" : "com.peoplepattern.pdb.PostEnrichments",
+  "javaInterfaces": ["java.io.Serializable"],
+  "extends": {
+    "$ref": "pdb-enrichments.json"
+  },
+  "properties": {
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "interests": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sentiment": {
+      "type": "string"
+    }
+  }
+}

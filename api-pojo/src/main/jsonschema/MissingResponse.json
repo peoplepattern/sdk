@@ -1,0 +1,13 @@
+
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.api.LookupResponse",
+  "javaInterfaces": ["java.io.Serializable"],
+  "description": "MissingResponse is a Map of pdb profiles by id",
+  "additionalProperties" : {
+    "type": "boolean",
+    "javaType": "com.peoplepattern.pdb.pojo.Profile"
+  }
+}

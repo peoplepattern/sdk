@@ -1,0 +1,54 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "id": "#",
+    "type": "object",
+    "javaType" : "com.peoplepattern.api.ExecuteRequest",
+    "javaInterfaces" : [
+        "java.io.Serializable"
+    ],
+    "properties": {
+        "configuration": {
+            "type": "string",
+            "description": "configuration for job",
+            "required": true
+        },
+        "dispatch": {
+            "type": "string",
+            "description": "target node(s) for job",
+            "required": false
+        },
+        "externalId": {
+            "type": "string",
+            "description": "externalId to track job",
+            "required": false
+        },
+        "job": {
+            "type": "string",
+            "description": "unique ID of rundeck job",
+            "required": true
+        },
+        "labels": {
+            "type": "array",
+            "description": "labels to apply to job",
+            "required": false,
+            "items": {
+                "type": "string"
+            }
+        },
+        "project": {
+            "type": "string",
+            "description": "project of job to run",
+            "required": false
+        },
+        "user": {
+            "type": "string",
+            "description": "user to run job as",
+            "required": false
+        },
+        "version": {
+            "type": "string",
+            "description": "version of job to run",
+            "required": false
+        }
+    }
+}

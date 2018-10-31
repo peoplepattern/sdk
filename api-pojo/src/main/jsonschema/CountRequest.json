@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "id": "#",
+    "type": "object",
+    "javaType" : "com.peoplepattern.api.CountRequest",
+    "javaInterfaces": ["java.io.Serializable"],
+    "properties": {
+        "index": {
+            "$ref": "./SearchRequest.json/#/properties/index"
+        },
+        "type": {
+            "$ref": "./SearchRequest.json/#/properties/type"
+        },
+        "queryString": {
+            "$ref": "./SearchRequest.json/#/properties/queryString"
+        },
+        "querySource": {
+            "$ref": "./SearchRequest.json/#/properties/querySource"
+        }
+    }
+}

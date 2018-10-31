@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "string",
+  "javaType": "com.peoplepattern.pdb.settings.AccessPermissions",
+  "enum": [
+    "ANY",
+    "SOME",
+    "NONE"
+  ],
+  "default": "ANY"
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.api.FilterResponse",
+  "javaInterfaces": ["java.io.Serializable"],
+  "properties": {
+    "totalItems": {
+      "type": "integer"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "http://streams.apache.org/streams-schemas/streams-schema-activitystreams/object.json"
+      }
+    }
+  }
+}

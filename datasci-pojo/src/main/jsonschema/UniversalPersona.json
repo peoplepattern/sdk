@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "$license": [
+    "http://www.apache.org/licenses/LICENSE-2.0"
+  ],
+  "id": "#",
+  "type": "string",
+  "javaType": "com.peoplepattern.datasci.personas.UniversalPersona",
+  "javaInterfaces": ["java.io.Serializable"],
+  "enum": [
+    "entertainment_junkie",
+    "sports_fan",
+    "trendsetter",
+    "health_wellness",
+    "high_schooler",
+    "business_executive",
+    "driven_professional",
+    "overscheduled_parent",
+    "remorseful_shopper",
+    "bargain_hunter",
+    "community_supporter",
+    "retiree",
+    "pet_friendly",
+    "college_student",
+    "networker",
+    "jetsetter",
+    "avid_newsie",
+    "gamer",
+    "early_adopter",
+    "outdoor_weekender",
+    "arts_music"
+  ]
+}

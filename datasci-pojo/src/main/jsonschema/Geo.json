@@ -1,0 +1,108 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "$license": [
+        "http://www.apache.org/licenses/LICENSE-2.0"
+    ],
+    "id": "#",
+    "type": "object",
+    "javaType": "com.peoplepattern.datasci.Geo",
+    "javaInterfaces": ["java.io.Serializable"],
+    "properties": {
+      "country" : {
+          "type" : "boolean"
+      },
+      "state": {
+          "type" : "boolean"
+      },
+      "city": {
+          "type": "boolean"
+      },
+      "county": {
+        "type": "boolean"
+      },
+      "province": {
+        "type": "boolean"
+      },
+      "geo_name_id": {
+        "type": "integer"
+      },
+      "global_metro_area": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "location": {
+        "properties": {
+          "dma": {
+            "type": "string"
+          },
+          "street": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "state_abbreviation": {
+            "type": "string"
+          },
+          "utc_offset": {
+            "type": "string"
+          },
+          "time_zone": {
+            "type": "string"
+          },
+          "metro_area": {
+            "type": "string"
+          },
+          "continent": {
+            "type": "string"
+          },
+          "language": {
+            "type": "string"
+          },
+          "population": {
+            "type": "integer"
+          },
+          "place_type": {
+            "type": "string",
+            "enum": [
+              "City",
+              "County",
+              "State",
+              "Province",
+              "Country"
+            ]
+          },
+          "postal_code": {
+            "type": "integer"
+          },
+          "country": {
+            "type": "string"
+          },
+          "country_code": {
+            "type": "string"
+          },
+          "coordinates": {
+            "properties": {
+              "longitude": {
+                "type": "number"
+              },
+              "latitude": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      },
+      "preferred_display_name": {
+        "type": "string"
+      }
+    }
+}

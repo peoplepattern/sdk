@@ -1,0 +1,12 @@
+
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.api.CheckResponse",
+  "javaInterfaces": ["java.io.Serializable"],
+  "description": "CheckResponse is a Map of id to true/false",
+  "additionalProperties" : {
+    "type": "boolean"
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "$license": [
+        "http://www.apache.org/licenses/LICENSE-2.0"
+    ],
+    "id": "#",
+    "type": "string",
+    "javaType": "com.peoplepattern.datasci.Student",
+    "javaInterfaces": ["java.io.Serializable"],
+    "enum": [
+        "student",
+        "high_school_student",
+        "graduate_student",
+        "undergraduate_student"
+    ]
+}

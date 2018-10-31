@@ -2,27 +2,24 @@
     "$schema": "http://json-schema.org/draft-03/schema",
     "id": "#",
     "type": "object",
-    "javaType" : "com.peoplepattern.streams.reports.ExternalInfluencersReportResult",
+    "javaType" : "com.peoplepattern.reports.ExternalInfluencersReportResult",
     "extends": {
-        "$ref": "../../../../../components/reports-traits/src/main/jsonschema/BaseReportResult.json"
+        "$ref": "./BaseReportResult.json"
     },
     "additionalProperties": false,
     "properties": {
         "$schema": {
             "type": "string",
-            "default": "http://apidocs.peoplepattern.com/ExternalInfluencersReportResult.json"
+            "default": "http://schemata.peoplepattern.com/ExternalInfluencersReportResult.json"
         },
         "audience": {
-            "type": "object",
-            "javaType": "com.peoplepattern.reports.Audience"
+            "$ref": "http://schemata.peoplepattern.com/Audience.json"
         },
         "externalInfluencerRanking": {
-            "type": "object",
-            "javaType": "com.peoplepattern.api.Ranking"
+            "$ref": "./Ranking.json"
         },
         "categoryInfluencerRankings": {
-            "type": "object",
-            "javaType": "com.peoplepattern.api.RankingOfRankings"
+            "$ref": "./RankingOfRankings.json"
         }
     }
 }

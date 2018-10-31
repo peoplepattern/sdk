@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "id": "#",
+    "type": "object",
+    "javaType" : "com.peoplepattern.reports.AudienceSummaryLightReportRequest",
+    "javaInterfaces": ["java.io.Serializable"],
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "default": "http://schemata.peoplepattern.com/AudienceSummaryLightReportRequest.json"
+        },
+        "audience": {
+            "type": "object",
+            "javaType": "com.peoplepattern.reports.Audience"
+        }
+    }
+}

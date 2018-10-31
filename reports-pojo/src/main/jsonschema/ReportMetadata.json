@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.reports.ReportMetadata",
+  "javaInterfaces": ["java.io.Serializable"],
+  "extends": {
+    "$ref": "http://streams.apache.org/streams-schemas/streams-schema-activitystreams/object.json"
+  },
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "default": "http://schemata.peoplepattern.com/ReportMetadata.json"
+    },
+    "objectType": {
+      "type": "string",
+      "default": "report"
+    },
+    "job": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "requested_size": {
+      "type": "integer"
+    },
+    "audience_size": {
+      "type": "integer"
+    },
+    "service": {
+      "type": "string"
+    },
+    "configuration": {
+      "type": "string"
+    },
+    "execution": {
+      "type": "integer"
+    },
+    "builder": {
+      "type": "string"
+    },
+    "seed": {
+      "type": "string"
+    },
+    "handle": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format" : "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format" : "date-time"
+    },
+    "date_started": {
+      "type": "string",
+      "format" : "date-time"
+    },
+    "date_completed": {
+      "type": "string",
+      "format" : "date-time"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "type": "object",
+  "javaType" : "com.peoplepattern.pdb.VCard",
+  "javaInterfaces": ["java.io.Serializable"],
+  "properties": {
+    "anniversary": {
+      "type": "string"
+    },
+    "email": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "name": {
+      "type": "object",
+      "properties": {
+        "given_name": {
+          "type": "string"
+        },
+        "family_name": {
+          "type": "string"
+        },
+        "fn": {
+          "type": "string"
+        },
+        "honorific_prefix": {
+          "type": "string"
+        }
+      }
+    },
+    "org": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "tel": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "x-spouse": {
+      "type": "string"
+    }
+  }
+}

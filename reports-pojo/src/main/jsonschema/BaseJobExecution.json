@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.reports.BaseJobExecution",
+  "javaInterfaces": ["java.io.Serializable"],
+  "extends": {
+    "description": "$ref http://streams.apache.org/streams-config/StreamsConfiguration.json",
+    "javaType": "org.apache.streams.config.StreamsConfiguration"
+  },
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "default": "http://schemata.peoplepattern.com/BaseJobExecution.json"
+    },
+    "configuration": {
+      "type": "string"
+    },
+    "execution": {
+      "type": "integer"
+    },
+    "externalId": {
+      "type": "string"
+    },
+    "group": {
+      "type": "string"
+    },
+    "job": {
+      "type": "string"
+    },
+    "labels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "user": {
+      "type": "string"
+    }
+  }
+}

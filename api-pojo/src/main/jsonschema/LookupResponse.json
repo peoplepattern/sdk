@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.api.LookupResponse",
+  "javaInterfaces": ["java.io.Serializable"],
+  "description": "LookupResponse is a Map of objects by id",
+  "additionalProperties" : {
+    "type": "object",
+    "javaType": "org.apache.streams.pojo.json.ActivityObject"
+  }
+}

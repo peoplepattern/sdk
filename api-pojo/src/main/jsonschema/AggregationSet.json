@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.api.AggregationSet",
+  "javaInterfaces": ["java.io.Serializable"],
+  "additionalProperties" : {
+    "description": "FieldAggregation.json",
+    "$ref": "./FieldAggregation.json"
+  }
+}

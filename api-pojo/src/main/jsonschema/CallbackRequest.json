@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "id": "#",
+    "type": "object",
+    "javaType" : "com.peoplepattern.api.CallbackRequest",
+    "properties": {
+        "execution": {
+            "type": "integer",
+            "description": "execution ID of running job",
+            "required": true
+        },
+        "interval": {
+            "type": "string",
+            "description": "interval",
+            "required": false
+        },
+        "url": {
+            "type": "string",
+            "description": "url",
+            "required": true
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "type": "object",
+  "javaType" : "com.peoplepattern.pdb.ProfileBundle",
+  "javaInterfaces": ["java.io.Serializable"],
+  "extends": {
+    "$ref": "http://streams.apache.org/streams-schemas/streams-schema-activitystreams/object.json"
+  },
+  "description": "collection of profiles and posts with the same actor",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "default": "http://schemata.peoplepattern.com/pdb-profile-bundle.json"
+    },
+    "profiles": {
+      "description": "collection of profiles with the same actor",
+      "type": "object",
+      "extends": {
+        "$ref": "http://streams.apache.org/streams-schemas/streams-schema-activitystreams/collection.json"
+      }
+    },
+    "posts": {
+      "description": "collection of posts with the same actor",
+      "type": "object",
+      "extends": {
+        "$ref": "http://streams.apache.org/streams-schemas/streams-schema-activitystreams/collection.json"
+      }
+    }
+  }
+}

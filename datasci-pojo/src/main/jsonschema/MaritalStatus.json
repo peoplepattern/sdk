@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "$license": [
+    "http://www.apache.org/licenses/LICENSE-2.0"
+  ],
+  "id": "#",
+  "type": "string",
+  "javaType": "com.peoplepattern.datasci.MaritalStatus",
+  "javaInterfaces": ["java.io.Serializable"],
+  "enum": [
+    "single",
+    "married",
+    "engaged",
+    "divorced",
+    "other"
+  ]
+}

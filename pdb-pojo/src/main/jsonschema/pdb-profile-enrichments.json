@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "type": "object",
+  "javaType" : "com.peoplepattern.pdb.ProfileEnrichments",
+  "javaInterfaces": ["java.io.Serializable"],
+  "extends": {
+    "$ref": "pdb-enrichments.json"
+  },
+  "properties": {
+    "account_type": {
+      "$ref": "http://schemata.peoplepattern.com/AccountType.json"
+    },
+    "spam": {
+      "type": "boolean"
+    },
+    "adult": {
+      "type": "boolean"
+    },
+    "demographics": {
+      "$ref": "http://schemata.peoplepattern.com/pdb-profile-demographics.json"
+    },
+    "extended": {
+      "$ref": "http://schemata.peoplepattern.com/pdb-profile-extended.json"
+    },
+    "psychographics": {
+      "$ref": "http://schemata.peoplepattern.com/pdb-profile-psychographics.json"
+    },
+    "place": {
+      "$ref": "http://schemata.peoplepattern.com/Geo.json#"
+    },
+    "vcard": {
+      "$ref": "vcard.json"
+    },
+    "influence": {
+      "type": "number"
+    },
+    "interestingness": {
+      "type": "number"
+    }
+  }
+}

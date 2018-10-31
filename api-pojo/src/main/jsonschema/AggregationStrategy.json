@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "string",
+  "javaType": "com.peoplepattern.pdb.settings.AggregationStrategy",
+  "default": "DEFAULT",
+  "enum": [
+    "DEFAULT",
+    "DOWNCASE",
+    "BINS",
+    "INTERVAL",
+    "NORMALIZE_MAX",
+    "TOTAL_HITS",
+    "LOOKUP"
+  ]
+}

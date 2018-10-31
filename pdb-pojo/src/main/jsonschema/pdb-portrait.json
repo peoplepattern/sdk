@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "type": "object",
+  "javaType" : "com.peoplepattern.pdb.Portrait",
+  "javaInterfaces": ["java.io.Serializable"],
+  "extends": {
+    "$ref": "pdb-profile.json"
+  },
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "default": "http://schemata.peoplepattern.com/pdb-portrait.json"
+    },
+    "type": {
+      "type": "string",
+      "default": "portrait"
+    },
+    "profiles": {
+      "type": "array",
+      "items": {
+        "$ref": "http://schemata.peoplepattern.com/pdb-profile.json"
+      }
+    },
+    "reports": {
+      "type": "array",
+      "items": {
+        "$ref": "http://schemata.peoplepattern.com/ReportMetadata.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "id": "#",
+    "type": "object",
+    "javaType" : "com.peoplepattern.api.SearchRequest",
+    "javaInterfaces": ["java.io.Serializable"],
+    "properties": {
+        "index": {
+            "type": "string",
+            "description": "index",
+            "required": false
+        },
+        "type": {
+            "type": "string",
+            "description": "type",
+            "required": false
+        },
+        "fields": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "fields",
+            "required": false
+        },
+        "limit": {
+            "type": "integer",
+            "description": "limit",
+            "required": false
+        },
+        "random": {
+            "type": "boolean",
+            "description": "random",
+            "required": false
+        },
+        "sort_field": {
+            "type": "string",
+            "description": "sort_field",
+            "required": false
+        },
+        "sort_order": {
+            "type": "string",
+            "enum": [
+                "ASC",
+                "DESC"
+            ],
+            "description": "sort_order",
+            "required": false
+        },
+        "queryString": {
+            "type": "string",
+            "description": "queryString",
+            "required": false
+        },
+        "querySource": {
+            "type": "object",
+            "javaType": "com.peoplepattern.api.QuerySource",
+            "description": "querySource",
+            "properties": {
+                "query": {
+                    "type": "object",
+                    "javaType": "com.peoplepattern.api.QuerySourceQuery",
+                    "description": "querySourceQuery"
+                }
+            },
+            "required": false
+        }
+    }
+}

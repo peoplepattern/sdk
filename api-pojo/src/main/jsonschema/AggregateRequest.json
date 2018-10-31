@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "id": "#",
+    "type": "object",
+    "javaType" : "com.peoplepattern.api.AggregateRequest",
+    "javaInterfaces": ["java.io.Serializable"],
+    "properties": {
+        "index": {
+            "$ref": "./SearchRequest.json/#/properties/index"
+        },
+        "type": {
+            "$ref": "./SearchRequest.json/#/properties/type"
+        },
+        "fields": {
+            "$ref": "./SearchRequest.json/#/properties/fields",
+            "description": "fields",
+            "required": false
+        },
+        "ids": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "ids",
+            "required": true
+        },
+        "strategy": {
+            "javaType": "com.peoplepattern.pdb.settings.AggregationStrategy"
+        }
+    }
+}

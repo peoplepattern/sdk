@@ -2,10 +2,10 @@
   "$schema": "http://json-schema.org/draft-03/schema",
   "id": "#",
   "type": "object",
-  "javaType" : "com.peoplepattern.streams.reports.InfluencerAudienceAnalysisReportResult",
+  "javaType" : "com.peoplepattern.reports.InfluencerAudienceAnalysisReportResult",
   "javaInterfaces": ["java.io.Serializable"],
   "extends": {
-    "$ref": "../../../../../components/reports-traits/src/main/jsonschema/BaseReportResult.json"
+    "$ref": "./BaseReportResult.json"
   },
   "additionalProperties": false,
   "properties": {
@@ -14,12 +14,10 @@
       "default": "http://schemata.peoplepattern.com/InfluencerAudienceAnalysisReportResult.json"
     },
     "audience": {
-      "type": "object",
-      "javaType": "com.peoplepattern.reports.Audience"
+      "$ref": "http://schemata.peoplepattern.com/Audience.json"
     },
     "seed": {
-      "type": "object",
-      "javaType": "com.peoplepattern.reports.Audience"
+      "$ref": "http://schemata.peoplepattern.com/Audience.json"
     },
     "account_type": {
       "type": "object",
@@ -46,28 +44,22 @@
       "javaType" : "com.peoplepattern.api.FieldAggregation"
     },
     "top_domains": {
-      "type": "object",
-      "javaType": "com.peoplepattern.api.Ranking"
+      "$ref": "./Ranking.json"
     },
     "top_hashtags": {
-      "type": "object",
-      "javaType": "com.peoplepattern.api.Ranking"
+      "$ref": "./Ranking.json"
     },
     "top_interests": {
-      "type": "object",
-      "javaType": "com.peoplepattern.api.Ranking"
+      "$ref": "./Ranking.json"
     },
     "top_mentions": {
-      "type": "object",
-      "javaType": "com.peoplepattern.api.Ranking"
+      "$ref": "./Ranking.json"
     },
     "top_global_metro_areas": {
-      "type": "object",
-      "javaType": "com.peoplepattern.api.Ranking"
+      "$ref": "./Ranking.json"
     },
     "top_us_metro_areas": {
-      "type": "object",
-      "javaType": "com.peoplepattern.api.Ranking"
+      "$ref": "./Ranking.json"
     }
   }
 }

@@ -1,0 +1,21 @@
+
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.api.RankedEntityItem",
+  "javaInterfaces": ["java.io.Serializable"],
+  "extends": {
+    "$ref" : "./EntityItem.json"
+  },
+  "properties": {
+    "rank": {
+      "type": "integer",
+      "required": true
+    },
+    "score": {
+      "type": "number",
+      "required": false
+    }
+  }
+}

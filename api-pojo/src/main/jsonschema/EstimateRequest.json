@@ -1,0 +1,9 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "id": "#",
+    "type": "object",
+    "javaType" : "com.peoplepattern.api.EstimateRequest",
+    "extends": {
+        "$ref": "./ExecuteRequest.json"
+    }
+}

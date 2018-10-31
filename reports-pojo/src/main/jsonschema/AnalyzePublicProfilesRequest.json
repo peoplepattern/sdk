@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-03/schema",
   "id": "#",
   "type": "object",
-  "javaType" : "com.peoplepattern.streams.analyze.AnalyzePublicProfilesRequest",
+  "javaType" : "com.peoplepattern.reports.AnalyzePublicProfilesRequest",
   "javaInterfaces": ["java.io.Serializable"],
   "properties": {
     "$schema": {
@@ -10,8 +10,7 @@
       "default": "http://schemata.peoplepattern.com/AnalyzePublicProfilesRequest.json"
     },
     "audience": {
-      "type": "object",
-      "javaType": "com.peoplepattern.reports.Audience"
+      "$ref": "http://schemata.peoplepattern.com/Audience.json"
     }
   }
 }

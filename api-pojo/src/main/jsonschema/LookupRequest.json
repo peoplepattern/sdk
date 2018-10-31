@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.api.LookupRequest",
+  "javaInterfaces": ["java.io.Serializable"],
+  "properties": {
+    "index": {
+      "type": "string",
+      "description": "index",
+      "required": false
+    },
+    "type": {
+      "type": "string",
+      "description": "type",
+      "required": false
+    },
+    "fields": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "fields",
+      "required": false
+    },
+    "ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "ids",
+      "required": true
+    },
+    "audience": {
+      "$ref": "http://schemata.peoplepattern.com/Audience.json"
+    }
+  }
+}

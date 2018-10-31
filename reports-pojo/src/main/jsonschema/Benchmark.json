@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType": "com.peoplepattern.reports.Benchmark",
+  "javaInterfaces": [
+    "java.io.Serializable"
+  ],
+  "properties": {
+    "group": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    }
+  }
+}

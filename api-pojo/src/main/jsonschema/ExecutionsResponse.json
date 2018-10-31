@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "id": "#",
+    "type": "object",
+    "javaType" : "com.peoplepattern.api.ExecutionsResponse",
+    "properties": {
+        "totalItems": {
+            "type": "integer"
+        },
+        "items": {
+            "type": "array",
+            "items": {
+                "$ref": "StatusResponse.json"
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "id": "#",
+    "type": "object",
+    "javaType" : "com.peoplepattern.api.ExecutionsRequest",
+    "properties": {
+        "job": {
+            "type": "string",
+            "description": "job filter",
+            "required": false
+        },
+        "label": {
+            "type": "string",
+            "description": "job label filter",
+            "required": false
+        },
+        "project": {
+            "type": "string",
+            "description": "project filter",
+            "required": false
+        },
+        "user": {
+            "type": "string",
+            "description": "user filter",
+            "required": false
+        },
+        "status": {
+            "$ref": "StatusResponse.json#properties/status"
+        },
+        "max": {
+            "type": "integer",
+            "description": "Maximum number of results to retrieve at once.",
+            "default": 20
+        },
+        "offset": {
+            "type": "integer",
+            "description": "First result offset to receive.",
+            "default": 0
+        }
+    }
+}

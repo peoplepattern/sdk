@@ -2,10 +2,10 @@
     "$schema": "http://json-schema.org/draft-03/schema",
     "id": "#",
     "type": "object",
-    "javaType" : "com.peoplepattern.streams.reports.AudienceInfluencersReportResult",
+    "javaType" : "com.peoplepattern.reports.AudienceInfluencersReportResult",
     "javaInterfaces": ["java.io.Serializable"],
     "extends": {
-        "$ref": "../../../../../components/reports-traits/src/main/jsonschema/BaseReportResult.json"
+        "$ref": "./BaseReportResult.json"
     },
     "additionalProperties": false,
     "properties": {
@@ -14,12 +14,10 @@
             "default": "http://schemata.peoplepattern.com/AudienceInfluencersReportResult.json"
         },
         "audience": {
-            "type": "object",
-            "javaType": "com.peoplepattern.reports.Audience"
+            "$ref": "http://schemata.peoplepattern.com/Audience.json"
         },
         "audienceInfluencerRanking": {
-            "type": "object",
-            "javaType": "com.peoplepattern.api.Ranking"
+            "$ref": "./Ranking.json"
         }
     }
 }

@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "type": "object",
+  "javaType" : "com.peoplepattern.pdb.Post",
+  "javaInterfaces": ["java.io.Serializable"],
+  "extends": {
+    "$ref": "http://streams.apache.org/streams-schemas/streams-schema-activitystreams/activity.json"
+  },
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "default": "http://schemata.peoplepattern.com/pdb-post.json"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "indexedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "device": {
+      "type": "string",
+      "enum" : [
+        "desktop",
+        "tablet",
+        "mobile",
+        "automated",
+        "unknown"
+      ]
+    },
+    "os": {
+      "type": "string",
+      "enum" : [
+        "ios",
+        "android",
+        "windows",
+        "mac",
+        "blackberry",
+        "unknown"
+      ]
+    },
+    "hashtags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "mentions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source": {
+      "type": "string"
+    },
+    "likes": {
+      "type": "integer",
+      "description": "The number of +1, Like, favorites, etc that the post has received"
+    },
+    "rebroadcasts": {
+      "type": "integer",
+      "description": "The number of retweets, shares, etc that the post has received"
+    },
+    "language": {
+      "type": "string",
+      "description": "The ISO language code of the post"
+    },
+    "location": {
+      "type": "object",
+      "description": "Location associated with the post",
+      "properties": {
+        "country": {
+          "type": "string",
+          "description": "Country"
+        },
+        "coordinates": {
+          "$ref": "http://schemata.peoplepattern.com/Geo.json#/properties/location/properties/coordinates"
+        }
+      }
+    },
+    "enrichments": {
+      "type": "object",
+      "$ref": "http://schemata.peoplepattern.com/pdb-post-enrichments.json"
+    }
+  }
+}

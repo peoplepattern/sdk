@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "id": "#",
+    "type": "object",
+    "javaType" : "com.peoplepattern.api.StatusRequest",
+    "properties": {
+        "configuration": {
+            "type": "string",
+            "description": "configuration of stream (26 char hash)",
+            "required": false
+        },
+        "execution": {
+            "type": "integer",
+            "description": "unique ID of stream (26 char hash)",
+            "required": false
+        },
+        "externalId": {
+            "type": "string",
+            "description": "externalId to track job",
+            "required": false
+        },
+        "label": {
+            "type": "string",
+            "description": "job label",
+            "required": false
+        },
+        "project": {
+            "type": "string",
+            "description": "project of running job",
+            "required": false
+        },
+        "user": {
+            "type": "string",
+            "description": "user of running job",
+            "required": false
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "$license": [
+        "http://www.apache.org/licenses/LICENSE-2.0"
+    ],
+    "id": "#",
+    "type": "string",
+    "javaType": "com.peoplepattern.datasci.PoliticalAffiliation",
+    "javaInterfaces": ["java.io.Serializable"],
+    "enum": [
+        "Communist",
+        "Democrat",
+        "Democratic",
+        "Green",
+        "Libertarian",
+        "Republican",
+        "Socialist",
+        "Tea Party",
+        "Other"
+    ]
+}

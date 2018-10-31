@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.api.StatusResponse",
+  "properties": {
+    "configuration": {
+      "type": "string",
+      "description": "configuration for job",
+      "required": false
+    },
+    "execution": {
+      "type": "integer",
+      "description": "unique ID of stream (26 char hash)",
+      "required": false
+    },
+    "externalId": {
+      "type": "string",
+      "description": "externalId to track job",
+      "required": false
+    },
+    "job": {
+      "type": "string",
+      "description": "job name of the execution"
+    },
+    "labels": {
+      "type": "array",
+      "description": "labels to apply to job",
+      "required": false,
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "description": "current status of the execution",
+      "required": true,
+      "enum": [
+        "SUBMITTED",
+        "ACCEPTED",
+        "RUNNING",
+        "FINISHED",
+        "INVALID",
+        "INVALID_REQUEST",
+        "INVALID_RESULT",
+        "FAILED",
+        "KILLED",
+        "UNKNOWN"
+      ]
+    },
+    "progress": {
+      "type": "number",
+      "description": "estimate of percent complete"
+    },
+    "errors": {
+      "type": "array",
+      "required": false,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "type": "object",
+  "javaType" : "com.peoplepattern.pdb.ProfilePosts",
+  "javaInterfaces": ["java.io.Serializable"],
+  "properties": {
+    "count": {
+      "type": "integer"
+    },
+    "devices": {
+      "type": "object",
+      "additionalProperties" : {
+        "type" : "number"
+      }
+    },
+    "entities": {
+      "type": "object"
+    },
+    "os": {
+      "type": "object",
+      "additionalProperties" : {
+        "type" : "number"
+      }
+    },
+    "top_domains": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "top_entities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "top_hashtags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "top_mentions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

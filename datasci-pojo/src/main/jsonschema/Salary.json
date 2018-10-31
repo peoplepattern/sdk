@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "$license": [
+        "http://www.apache.org/licenses/LICENSE-2.0"
+    ],
+    "id": "#",
+    "type": "string",
+    "javaType": "com.peoplepattern.datasci.Salary",
+    "javaInterfaces": ["java.io.Serializable"],
+    "enum" : [
+        "low",
+        "med1",
+        "med2",
+        "med3",
+        "high"
+    ]
+}

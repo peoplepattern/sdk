@@ -1,0 +1,22 @@
+
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.reports.RankingOfRankings",
+  "javaInterfaces": ["java.io.Serializable"],
+  "extends": {
+    "$ref" : "http://schemata.peoplepattern.com/EntityItem.json"
+  },
+  "properties": {
+    "totalItems": {
+      "type": "integer"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref" : "./Ranking.json"
+      }
+    }
+  }
+}

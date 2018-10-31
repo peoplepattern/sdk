@@ -2,24 +2,22 @@
   "$schema": "http://json-schema.org/draft-03/schema",
   "id": "#",
   "type": "object",
-  "javaType" : "com.peoplepattern.streams.reports.TopFriendsReportResult",
+  "javaType" : "com.peoplepattern.reports.TopFriendsReportResult",
   "javaInterfaces": ["java.io.Serializable"],
   "extends": {
-    "$ref": "../../../../../components/reports-traits/src/main/jsonschema/BaseReportResult.json"
+    "$ref": "./BaseReportResult.json"
   },
   "additionalProperties": false,
   "properties": {
     "$schema": {
       "type": "string",
-      "default": "http://apidocs.peoplepattern.com/TopFriendsReportResult.json"
+      "default": "http://schemata.peoplepattern.com/TopFriendsReportResult.json"
     },
     "audience": {
-      "type": "object",
-      "javaType": "com.peoplepattern.reports.Audience"
+      "$ref": "http://schemata.peoplepattern.com/Audience.json"
     },
     "topFriends": {
-      "type": "object",
-      "javaType": "com.peoplepattern.api.Ranking"
+      "$ref": "./Ranking.json"
     }
   }
 }

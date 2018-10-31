@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "id": "#",
+    "type": "object",
+    "javaType" : "com.peoplepattern.api.EstimateResponse",
+    "properties": {
+        "runMs": {
+            "type": "integer"
+        },
+        "waitMs": {
+            "type": "integer"
+        }
+    }
+}

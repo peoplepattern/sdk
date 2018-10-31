@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "type": "object",
+  "javaType" : "com.peoplepattern.pdb.Psychographics",
+  "javaInterfaces": ["java.io.Serializable"],
+  "properties": {
+    "best_persona": {
+      "type": "string"
+    },
+    "languages": {
+      "type": "object",
+      "additionalProperties" : {
+        "type" : "number"
+      }
+    },
+    "interests": {
+      "type": "object",
+      "additionalProperties" : {
+        "type" : "number"
+      }
+    },
+    "personas": {
+      "type": "object",
+      "additionalProperties" : {
+        "type" : "number"
+      }
+    },
+    "influence": {
+      "type": "number"
+    },
+    "sentiment": {
+      "type": "object",
+      "additionalProperties" : {
+        "type" : "number"
+      }
+    },
+    "top_languages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "top_interests": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "top_personas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
