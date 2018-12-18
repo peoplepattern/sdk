@@ -11,7 +11,8 @@
     },
     "audience": {
       "description": "explicit audience supplied by caller",
-      "$ref": "http://schemata.peoplepattern.com/Audience.json"
+      "$ref": "http://schemata.peoplepattern.com/Audience.json",
+      "javaType" : "com.peoplepattern.api.Audience"
     },
     "seed": {
       "description": "explicit seed account declaration supplied by caller",
@@ -25,6 +26,7 @@
       "description": "choice of social network for influencer and audience",
       "type": "string",
       "enum": [
+        "instagram",
         "twitter",
         "youtube"
       ]
@@ -77,6 +79,14 @@
         "random",
         "recent"
       ]
+    },
+    "token": {
+      "description": "api token for retrieving audience analysis directly from the platform",
+      "type": "string"
+    },
+    "url": {
+      "description": "url typically for youtube",
+      "type": "string"
     }
   }
 }

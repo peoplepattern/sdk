@@ -14,7 +14,8 @@
       "default": "http://schemata.peoplepattern.com/TopFriendsReportResult.json"
     },
     "audience": {
-      "$ref": "http://schemata.peoplepattern.com/Audience.json"
+      "$ref": "http://schemata.peoplepattern.com/Audience.json",
+      "javaType" : "com.peoplepattern.api.Audience"
     },
     "topFriends": {
       "$ref": "./Ranking.json"

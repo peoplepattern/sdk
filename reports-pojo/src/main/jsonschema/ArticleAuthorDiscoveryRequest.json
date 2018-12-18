@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.reports.ArticleAuthorDiscoveryRequest",
+  "javaInterfaces": ["java.io.Serializable"],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "default": "http://schemata.peoplepattern.com/ArticleAuthorDiscoveryRequest.json"
+    },
+    "urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

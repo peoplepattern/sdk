@@ -11,6 +11,9 @@
     "timestamp": {
       "type": "string",
       "format": "date-time"
+    },
+    "_metadata": {
+      "$ref": "./BaseReportMetadata.json"
     }
   }
 }

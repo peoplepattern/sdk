@@ -2,20 +2,13 @@
   "$schema": "http://json-schema.org/draft-03/schema",
   "id": "#",
   "type": "object",
-  "javaType" : "com.peoplepattern.reports.ReportMetadata",
+  "javaType" : "com.peoplepattern.reports.BaseReportMetadata",
   "javaInterfaces": ["java.io.Serializable"],
-  "extends": {
-    "$ref": "http://streams.apache.org/streams-schemas/streams-schema-activitystreams/object.json"
-  },
   "additionalProperties": false,
   "properties": {
     "$schema": {
       "type": "string",
-      "default": "http://schemata.peoplepattern.com/ReportMetadata.json"
-    },
-    "objectType": {
-      "type": "string",
-      "default": "report"
+      "default": "http://schemata.peoplepattern.com/BaseReportMetadata.json"
     },
     "job": {
       "type": "string"
@@ -38,28 +31,13 @@
     "execution": {
       "type": "integer"
     },
-    "builder": {
-      "type": "string"
-    },
     "seed": {
       "type": "string"
     },
     "handle": {
       "type": "string"
     },
-    "created_at": {
-      "type": "string",
-      "format" : "date-time"
-    },
-    "updated_at": {
-      "type": "string",
-      "format" : "date-time"
-    },
-    "date_started": {
-      "type": "string",
-      "format" : "date-time"
-    },
-    "date_completed": {
+    "timestamp": {
       "type": "string",
       "format" : "date-time"
     }

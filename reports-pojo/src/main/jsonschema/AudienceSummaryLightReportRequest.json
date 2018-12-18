@@ -12,7 +12,7 @@
         },
         "audience": {
             "type": "object",
-            "javaType": "com.peoplepattern.reports.Audience"
+            "javaType": "com.peoplepattern.api.Audience"
         }
     }
 }

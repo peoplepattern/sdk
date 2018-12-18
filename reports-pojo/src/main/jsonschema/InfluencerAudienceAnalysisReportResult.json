@@ -14,10 +14,12 @@
       "default": "http://schemata.peoplepattern.com/InfluencerAudienceAnalysisReportResult.json"
     },
     "audience": {
-      "$ref": "http://schemata.peoplepattern.com/Audience.json"
+      "$ref": "http://schemata.peoplepattern.com/Audience.json",
+      "javaType" : "com.peoplepattern.api.Audience"
     },
     "seed": {
-      "$ref": "http://schemata.peoplepattern.com/Audience.json"
+      "$ref": "http://schemata.peoplepattern.com/Audience.json",
+      "javaType" : "com.peoplepattern.api.Audience"
     },
     "account_type": {
       "type": "object",

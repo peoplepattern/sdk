@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType": "com.peoplepattern.reports.ArticleAuthorDiscoveryResult",
+  "javaInterfaces": [
+    "java.io.Serializable"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "default": "http://schemata.peoplepattern.com/ArticleAuthorDiscoveryResult.json"
+    },
+    "statistics": {
+      "type": "object",
+      "properties": {
+        "unique_links": {
+          "type": "integer"
+        },
+        "links_with_authors": {
+          "type": "integer"
+        },
+        "authors": {
+          "type": "integer"
+        },
+        "links_with_duplicate_author": {
+          "type": "integer"
+        },
+        "links_with_no_author": {
+          "type": "integer"
+        },
+        "links_not_found": {
+          "type": "integer"
+        },
+        "authors_with_name_email_twitter": {
+          "type": "integer"
+        },
+        "authors_with_name": {
+          "type": "integer"
+        }
+      }
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "key": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "domain": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "twitter": {
+            "type": "string"
+          },
+          "instagram": {
+            "type": "string"
+          },
+          "tumblr": {
+            "type": "string"
+          },
+          "youtube": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
