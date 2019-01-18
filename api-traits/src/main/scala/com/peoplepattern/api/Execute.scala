@@ -8,7 +8,7 @@ import org.apache.juneau.rest.client.remote.RemoteMethod
 @RemoteInterface(path = "https://api.peoplepattern.com")
 trait Execute {
 
-  @RemoteMethod(method = "POST", path = "/estimate")
+  @RemoteMethod(method = "POST", path = "/execute")
   def execute(request: ExecuteRequest): ExecuteResponse
 
 }

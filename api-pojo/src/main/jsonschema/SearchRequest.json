@@ -28,6 +28,11 @@
             "description": "limit",
             "required": false
         },
+        "offset": {
+            "type": "integer",
+            "description": "offset",
+            "required": false
+        },
         "random": {
             "type": "boolean",
             "description": "random",
