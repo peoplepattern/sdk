@@ -55,6 +55,7 @@
     </properties>
 
     <modules>
+        <module>api-client</module>
         <module>api-pojo</module>
         <module>api-traits</module>
         <module>datasci-pojo</module>
