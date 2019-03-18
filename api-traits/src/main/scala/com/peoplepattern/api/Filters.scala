@@ -2,8 +2,7 @@ package com.peoplepattern.api
 
 import com.fasterxml.jackson.databind.JsonNode
 import com.fasterxml.jackson.databind.node.ArrayNode
-import com.google.common.base.Optional
-;
+import java.util.Optional
 
 /**
   * A filter describes a search criteria for finding documents related to an entity.

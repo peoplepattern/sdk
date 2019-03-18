@@ -6,6 +6,10 @@ import org.apache.juneau.http.annotation.Body
 import org.apache.juneau.remote.RemoteInterface
 import org.apache.juneau.rest.client.remote.RemoteMethod
 
+object Filter {
+    final val PATH = "/filter"
+}
+
 /**
   * Filter profiles.
   */

@@ -1,11 +1,15 @@
 package com.peoplepattern.api
 
-import com.google.common.base.Optional
+import java.util.Optional
 import com.peoplepattern.api.AggregateRequest
 import com.peoplepattern.api.AggregateResponse
 import org.apache.juneau.http.annotation.Body
 import org.apache.juneau.remote.RemoteInterface
 import org.apache.juneau.rest.client.remote.RemoteMethod
+
+object Aggregate {
+  final val PATH = "/aggregate"
+}
 
 /**
   * Aggregate details about groups of profiles.
@@ -34,7 +38,7 @@ trait Aggregate {
       }
 
   */
-  @RemoteMethod(method = "POST", path = "/aggregate")
+  @RemoteMethod(method = "POST", path = Aggregate.PATH)
   def aggregate(@Body aggregateRequest: AggregateRequest ) : Optional[AggregateResponse];
 
 }

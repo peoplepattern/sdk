@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "type": "object",
+  "javaType": "com.peoplepattern.api.ConnectionListProviderConfiguration",
+  "javaInterfaces": [
+    "java.io.Serializable"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "unique_id": {
+      "type": "string"
+    },
+    "handle": {
+      "type": "string"
+    },
+    "service": {
+      "type": "string"
+    },
+    "direction": {
+      "type": "string"
+    },
+    "maxItems": {
+      "type": "integer"
+    }
+  }
+}

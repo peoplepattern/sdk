@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "type": "object",
+  "javaType": "com.peoplepattern.api.ConnectionListMetadata",
+  "javaInterfaces": [
+    "java.io.Serializable"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "unique_id": {
+      "type": "string"
+    },
+    "handle": {
+      "type": "string"
+    },
+    "service": {
+      "type": "string"
+    },
+    "status": {
+      "type": "integer"
+    },
+    "size": {
+      "type": "integer"
+    },
+    "estimated_size": {
+      "type": "integer"
+    },
+    "direction": {
+      "type": "string"
+    },
+    "interesting": {
+      "type": "boolean"
+    },
+    "verified": {
+      "type": "boolean"
+    },
+    "panelist": {
+      "type": "boolean"
+    },
+    "schema": {
+      "type": "string"
+    },
+    "s3_path": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "string"
+    },
+    "stopped_fetching_at": {
+      "type": "string"
+    }
+  }
+}

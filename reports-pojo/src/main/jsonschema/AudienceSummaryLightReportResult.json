@@ -60,6 +60,14 @@
             "type": "object",
             "javaType": "com.peoplepattern.reports.Ranking"
         },
+        "top_continents": {
+            "type": "object",
+            "javaType": "com.peoplepattern.reports.Ranking"
+        },
+        "top_countries": {
+            "type": "object",
+            "javaType": "com.peoplepattern.reports.Ranking"
+        },
         "top_global_metro_areas": {
             "type": "object",
             "javaType": "com.peoplepattern.reports.Ranking"
