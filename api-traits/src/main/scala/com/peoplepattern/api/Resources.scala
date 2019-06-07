@@ -1,5 +1,6 @@
 package com.peoplepattern.api
 
+import java.io.StringReader
 import java.util.Collection
 import java.util.Optional
 

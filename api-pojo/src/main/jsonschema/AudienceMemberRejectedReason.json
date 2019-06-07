@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType": "com.peoplepattern.api.Audience",
+  "javaInterfaces": [
+    "java.io.Serializable"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "totalItems": {
+      "type": "integer"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "javaType": "org.apache.streams.pojo.json.ActivityObject"
+      }
+    }
+  }
+}

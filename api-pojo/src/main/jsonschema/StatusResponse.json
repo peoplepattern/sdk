@@ -58,6 +58,13 @@
       "items": {
         "type": "string"
       }
+    },
+    "warnings": {
+      "type": "array",
+      "required": false,
+      "items": {
+        "type": "string"
+      }
     }
   }
 }

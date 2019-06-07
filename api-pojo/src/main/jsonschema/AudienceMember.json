@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType": "com.peoplepattern.api.AudienceMember",
+  "javaInterfaces": [
+    "java.io.Serializable"
+  ],
+  "extends": {
+    "javaType": "org.apache.streams.pojo.json.ActivityObject"
+  },
+  "properties": {
+    "_metadata": {
+      "type": "object",
+      "javaType": "com.peoplepattern.api.AudienceMemberMetadata",
+      "javaInterfaces": [
+        "java.io.Serializable"
+      ],
+      "properties": {
+        "analyzed": {
+          "type": "boolean"
+        },
+        "included": {
+          "type": "boolean"
+        },
+        "interesting": {
+          "type": "boolean"
+        },
+        "rejected_reasons": {
+          "type": "array",
+          "items": {
+            "javaType": "com.peoplepattern.api.AudienceMemberRejectedReason"
+          }
+        }
+      }
+    }
+  }
+}

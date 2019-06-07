@@ -2,21 +2,23 @@
   "$schema": "http://json-schema.org/draft-03/schema",
   "id": "#",
   "type": "object",
-  "javaType": "com.peoplepattern.api.Audience",
+  "javaType": "com.peoplepattern.api.AudienceMemberRejectedReason",
   "javaInterfaces": [
     "java.io.Serializable"
   ],
   "additionalProperties": false,
   "properties": {
-    "totalItems": {
-      "type": "integer"
+    "id": {
+      "type": "string",
+      "enum": [
+        "PRIVATE",
+        "FOLLOWERS_LT_MIN",
+        "FRIENDS_LT_MIN",
+        "POSTS_LT_MIN"
+      ]
     },
-    "items": {
-      "type": "array",
-      "items": {
-        "type": "integer",
-        "javaType": "org.apache.streams.pojo.json.ActivityObject"
-      }
+    "description": {
+      "type": "string"
     }
   }
 }

@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType": "com.peoplepattern.api.AudienceMembers",
+  "javaInterfaces": [
+    "java.io.Serializable"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "_metadata": {
+      "type": "object",
+      "javaType": "com.peoplepattern.api.AudienceMembersMetadata",
+      "javaInterfaces": [
+        "java.io.Serializable"
+      ],
+      "properties": {
+        "analyzed_count": {
+          "type": "integer"
+        },
+        "included_count": {
+          "type": "integer"
+        },
+        "interesting_count": {
+          "type": "integer"
+        },
+        "uninteresting_count": {
+          "type": "integer"
+        }
+      }
+    },
+    "totalItems": {
+      "type": "integer"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "javaType": "com.peoplepattern.api.AudienceMember"
+      }
+    }
+  }
+}
