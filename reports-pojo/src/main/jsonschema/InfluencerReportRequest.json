@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.reports.InfluencerReportRequest",
+  "javaInterfaces": ["java.io.Serializable"],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "default": "http://schemata.peoplepattern.com/InfluencerReportRequest.json"
+    },
+    "service": {
+      "description": "platform",
+      "type": "string"
+    },
+    "username": {
+      "description": "handle",
+      "type": "string"
+    }
+  }
+}

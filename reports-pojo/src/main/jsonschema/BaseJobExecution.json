@@ -14,10 +14,10 @@
       "type": "string",
       "default": "http://schemata.peoplepattern.com/BaseJobExecution.json"
     },
-    "companyId": {
+    "company_id": {
       "type": "integer"
     },
-    "companyName": {
+    "company_name": {
       "type": "string"
     },
     "configuration": {
@@ -26,7 +26,7 @@
     "execution": {
       "type": "integer"
     },
-    "externalId": {
+    "external_id": {
       "type": "string"
     },
     "group": {
@@ -41,10 +41,10 @@
         "type": "string"
       }
     },
-    "userId": {
+    "user_id": {
       "type": "integer"
     },
-    "userName": {
+    "user_name": {
       "type": "string"
     }
   }

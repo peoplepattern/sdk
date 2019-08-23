@@ -12,11 +12,10 @@ object Status {
 @RemoteInterface(path = "https://api.peoplepattern.com")
 trait Status {
 
-  def computeStatus(statusRequest: StatusRequest): StatusResponse
-
-  @RemoteMethod(method = "POST", path = Status.PATH)
+  @RemoteMethod(method = "GET", path = Status.PATH)
   def getStatus(statusRequest: StatusRequest): StatusResponse
 
+  @RemoteMethod(method = "POST", path = Status.PATH)
   def setStatus(status: StatusResponse): Unit
 
 }
