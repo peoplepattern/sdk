@@ -24,6 +24,7 @@ class SearchClient extends PeoplePattern
     val json = new StringReader(MAPPER.writeValueAsString(request))
     val call = restClient.doPost(Search.PATH, json)
     val attempt = Try(call.getResponse)
+    Thread.sleep(1000)
     if( attempt.isFailure ) return new SearchResponse()
     val entity: HttpEntity = attempt.get.getEntity
     val entityString: String = EntityUtils.toString(entity)

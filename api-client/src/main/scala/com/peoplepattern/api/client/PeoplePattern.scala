@@ -38,9 +38,11 @@ class PeoplePattern extends Serializable {
     .build()
 
   lazy val restClientBuilder = RestClient.create()
+    .accept("application/json")
     .authorization(authorization())
     .autoCloseStreams()
     .beansRequireSerializable(true)
+    .contentType("application/json")
     .debug()
     .debugOutputLines(100)
     .disableAutomaticRetries()
