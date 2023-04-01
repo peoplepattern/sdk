@@ -5,8 +5,8 @@
   "type": "object",
   "javaType" : "com.peoplepattern.reports.RankingOfRankings",
   "javaInterfaces": ["java.io.Serializable"],
-  "extends": {
-    "$ref" : "http://schemata.peoplepattern.com/EntityItem.json"
+  "extends":{
+    "existingJavaType": "com.peoplepattern.api.RankedEntityItem"
   },
   "properties": {
     "totalItems": {

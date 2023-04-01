@@ -8,7 +8,8 @@
       "type": "integer"
     },
     "gender": {
-      "$ref": "http://schemata.peoplepattern.com/Gender.json"
+      "existingJavaType": "com.peoplepattern.datasci.Gender",
+      "seeAlso": "http://schemata.peoplepattern.com/Gender.json"
     }
   }
 }

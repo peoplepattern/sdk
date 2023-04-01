@@ -4,12 +4,12 @@
   "javaType" : "com.peoplepattern.pdb.Portrait",
   "javaInterfaces": ["java.io.Serializable"],
   "extends": {
-    "$ref": "pdb-profile.json"
+    "$ref": "./Profile.json"
   },
   "properties": {
     "$schema": {
       "type": "string",
-      "default": "http://schemata.peoplepattern.com/pdb-portrait.json"
+      "default": "http://schemata.peoplepattern.com/Portrait.json"
     },
     "type": {
       "type": "string",
@@ -18,13 +18,7 @@
     "profiles": {
       "type": "array",
       "items": {
-        "$ref": "http://schemata.peoplepattern.com/pdb-profile.json"
-      }
-    },
-    "reports": {
-      "type": "array",
-      "items": {
-        "$ref": "http://schemata.peoplepattern.com/ReportMetadata.json"
+        "$ref": "./Profile.json"
       }
     }
   }

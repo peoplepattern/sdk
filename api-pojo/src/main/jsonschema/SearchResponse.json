@@ -11,7 +11,7 @@
     "items": {
       "type": "array",
       "items": {
-        "$ref": "http://streams.apache.org/streams-schemas/streams-schema-activitystreams/object.json"
+        "existingJavaType": "org.apache.streams.pojo.json.ActivityObject"
       }
     }
   }

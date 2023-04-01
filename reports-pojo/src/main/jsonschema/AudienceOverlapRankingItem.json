@@ -3,19 +3,19 @@
   "$schema": "http://json-schema.org/draft-03/schema",
   "id": "#",
   "type": "object",
-  "javaType" : "com.peoplepattern.reports.Ranking",
+  "javaType" : "com.peoplepattern.reports.AudienceOverlapRankingItem",
   "javaInterfaces": ["java.io.Serializable"],
   "extends": {
     "existingJavaType": "com.peoplepattern.api.RankedEntityItem"
   },
   "properties": {
-    "totalItems": {
-      "type": "integer"
-    },
     "items": {
       "type": "array",
       "items": {
-        "existingJavaType": "com.peoplepattern.api.RankedEntityItem"
+        "javaType": "com.peoplepattern.reports.AudienceOverlapRankingItemSampleItem",
+        "properties": {
+          "id": "string"
+        }
       }
     }
   }

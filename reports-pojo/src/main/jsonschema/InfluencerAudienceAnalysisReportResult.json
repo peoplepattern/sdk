@@ -14,36 +14,28 @@
       "default": "http://schemata.peoplepattern.com/InfluencerAudienceAnalysisReportResult.json"
     },
     "audience": {
-      "$ref": "http://schemata.peoplepattern.com/Audience.json",
-      "javaType" : "com.peoplepattern.api.Audience"
+      "existingJavaType" : "com.peoplepattern.api.Audience"
     },
     "seed": {
-      "$ref": "http://schemata.peoplepattern.com/Audience.json",
-      "javaType" : "com.peoplepattern.api.Audience"
+      "existingJavaType" : "com.peoplepattern.api.Audience"
     },
     "account_type": {
-      "type": "object",
-      "javaType" : "com.peoplepattern.api.FieldAggregation"
+      "existingJavaType" : "com.peoplepattern.api.FieldAggregation"
     },
     "birthyear": {
-      "type": "object",
-      "javaType" : "com.peoplepattern.api.FieldAggregation"
+      "existingJavaType" : "com.peoplepattern.api.FieldAggregation"
     },
     "race": {
-      "type": "object",
-      "javaType" : "com.peoplepattern.api.FieldAggregation"
+      "existingJavaType" : "com.peoplepattern.api.FieldAggregation"
     },
     "gender": {
-      "type": "object",
-      "javaType" : "com.peoplepattern.api.FieldAggregation"
+      "existingJavaType" : "com.peoplepattern.api.FieldAggregation"
     },
     "device": {
-      "type": "object",
-      "javaType" : "com.peoplepattern.api.FieldAggregation"
+      "existingJavaType" : "com.peoplepattern.api.FieldAggregation"
     },
     "os": {
-      "type": "object",
-      "javaType" : "com.peoplepattern.api.FieldAggregation"
+      "existingJavaType" : "com.peoplepattern.api.FieldAggregation"
     },
     "top_domains": {
       "$ref": "./Ranking.json"

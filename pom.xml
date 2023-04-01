@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.apache.streams</groupId>
         <artifactId>apache-streams</artifactId>
-        <version>0.6.1-SNAPSHOT</version>
+        <version>0.6.2-SNAPSHOT</version>
     </parent>
 
     <groupId>com.peoplepattern</groupId>
@@ -36,6 +36,7 @@
         <java.version>1.8</java.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <scala-maven.plugin.version>4.7.1</scala-maven.plugin.version>
 
         <scala.suffix>2.11</scala.suffix>
         <scala.version>2.11.12</scala.version>
@@ -49,22 +50,27 @@
         <jackson.version>2.9.9</jackson.version>
         <joda-time.version>2.9.9</joda-time.version>
         <juneau.version>8.0.0</juneau.version>
-        <streams.version>0.6.1-SNAPSHOT</streams.version>
+        <streams.version>0.6.2-SNAPSHOT</streams.version>
         <validation.version>1.1.0.Final</validation.version>
 
     </properties>
 
     <modules>
-        <module>api-client</module>
-        <module>api-pojo</module>
-        <module>api-traits</module>
         <module>datasci-pojo</module>
-        <module>pdb-pojo</module>
         <module>reports-pojo</module>
+        <module>pdb-pojo</module>
+        <module>api-pojo</module>
+        <module>api-client</module>
+        <module>api-traits</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.jsonschema2pojo</groupId>
+                <artifactId>jsonschema2pojo-core</artifactId>
+                <version>${jsonschema2pojo.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-annotations</artifactId>
@@ -239,6 +245,10 @@
             <artifactId>joda-time</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.jsonschema2pojo</groupId>
+            <artifactId>jsonschema2pojo-core</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.apache.juneau</groupId>
             <artifactId>juneau-marshall</artifactId>
         </dependency>
@@ -259,8 +269,37 @@
                     <groupId>org.apache.streams.plugins</groupId>
                     <artifactId>streams-plugin-pojo</artifactId>
                     <version>${streams.version}</version>
+                    <configuration>
+                        <targetPackage>com.peoplepattern.pojo</targetPackage>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>net.alchim31.maven</groupId>
+                    <artifactId>scala-maven-plugin</artifactId>
+                    <version>${scala-maven.plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <id>scala-compile-first</id>
+                            <phase>process-resources</phase>
+                            <goals>
+                                <goal>add-source</goal>
+                                <goal>compile</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>scala-test-compile</id>
+                            <phase>process-test-resources</phase>
+                            <goals>
+                                <goal>testCompile</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <scalaVersion>${scala.version}</scalaVersion>
+                    </configuration>
                 </plugin>
             </plugins>
+
         </pluginManagement>
     </build>
 </project>

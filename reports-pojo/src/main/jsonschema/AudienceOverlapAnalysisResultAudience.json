@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "id": "#",
+    "type": "object",
+    "javaType" : "com.peoplepattern.reports.AudienceOverlapAnalysisResultAudience",
+    "javaInterfaces": ["java.io.Serializable"],
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "default": "http://schemata.peoplepattern.com/AudienceOverlapAnalysisResultAudience.json"
+        },
+        "id": {
+            "type": "string"
+        },
+        "displayName": {
+            "type": "string"
+        },
+        "configuration": {
+            "type": "string"
+        },
+        "totalItems": {
+            "type": "integer"
+        }
+    }
+}

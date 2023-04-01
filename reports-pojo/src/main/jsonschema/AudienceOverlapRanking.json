@@ -1,12 +1,10 @@
+
 {
   "$schema": "http://json-schema.org/draft-03/schema",
   "id": "#",
   "type": "object",
-  "javaType": "com.peoplepattern.api.Audience",
-  "javaInterfaces": [
-    "java.io.Serializable"
-  ],
-  "additionalProperties": false,
+  "javaType" : "com.peoplepattern.reports.AudienceOverlapRanking",
+  "javaInterfaces": ["java.io.Serializable"],
   "properties": {
     "totalItems": {
       "type": "integer"
@@ -14,7 +12,7 @@
     "items": {
       "type": "array",
       "items": {
-        "existingJavaType": "org.apache.streams.pojo.json.ActivityObject"
+        "$ref" : "AudienceOverlapRankingItem.json"
       }
     }
   }

@@ -11,8 +11,7 @@
             "default": "http://schemata.peoplepattern.com/AudienceSummaryLightReportRequest.json"
         },
         "audience": {
-            "type": "object",
-            "javaType": "com.peoplepattern.api.Audience"
+            "existingJavaType": "com.peoplepattern.api.Audience"
         }
     }
 }

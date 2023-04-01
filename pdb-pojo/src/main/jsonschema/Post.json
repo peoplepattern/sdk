@@ -4,12 +4,12 @@
   "javaType" : "com.peoplepattern.pdb.Post",
   "javaInterfaces": ["java.io.Serializable"],
   "extends": {
-    "$ref": "http://streams.apache.org/streams-schemas/streams-schema-activitystreams/activity.json"
+    "existingJavaType": "org.apache.streams.pojo.json.Activity"
   },
   "properties": {
     "$schema": {
       "type": "string",
-      "default": "http://schemata.peoplepattern.com/pdb-post.json"
+      "default": "Post.json"
     },
     "createdAt": {
       "type": "string",
@@ -86,13 +86,12 @@
           "description": "Country"
         },
         "coordinates": {
-          "$ref": "http://schemata.peoplepattern.com/Geo.json#/properties/location/properties/coordinates"
+          "$ref": "../../../../datasci-pojo/src/main/jsonschema/Geo.json#/properties/location/properties/coordinates"
         }
       }
     },
     "enrichments": {
-      "type": "object",
-      "$ref": "http://schemata.peoplepattern.com/pdb-post-enrichments.json"
+      "$ref": "./PostEnrichments.json"
     }
   }
 }

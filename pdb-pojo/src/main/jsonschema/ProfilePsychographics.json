@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
   "type": "object",
-  "javaType" : "com.peoplepattern.pdb.Psychographics",
+  "javaType" : "com.peoplepattern.pdb.ProfilePsychographics",
   "javaInterfaces": ["java.io.Serializable"],
   "properties": {
     "best_persona": {

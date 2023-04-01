@@ -4,11 +4,11 @@
   "javaType" : "com.peoplepattern.pdb.ProfileEnrichments",
   "javaInterfaces": ["java.io.Serializable"],
   "extends": {
-    "$ref": "pdb-enrichments.json"
+    "$ref": "Enrichments.json"
   },
   "properties": {
     "account_type": {
-      "$ref": "http://schemata.peoplepattern.com/AccountType.json"
+      "existingJavaType": "com.peoplepattern.datasci.AccountType"
     },
     "spam": {
       "type": "boolean"
@@ -17,19 +17,19 @@
       "type": "boolean"
     },
     "demographics": {
-      "$ref": "http://schemata.peoplepattern.com/pdb-profile-demographics.json"
+      "$ref": "Demographics.json"
     },
     "extended": {
-      "$ref": "http://schemata.peoplepattern.com/pdb-profile-extended.json"
+      "$ref": "ExtendedDemographics.json"
     },
     "psychographics": {
-      "$ref": "http://schemata.peoplepattern.com/pdb-profile-psychographics.json"
+      "$ref": "ProfilePsychographics.json"
     },
     "place": {
       "$ref": "http://schemata.peoplepattern.com/Geo.json#"
     },
     "vcard": {
-      "$ref": "vcard.json"
+      "$ref": "ProfileVcard.json"
     },
     "influence": {
       "type": "number"

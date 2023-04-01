@@ -35,8 +35,7 @@
     "items": {
       "type": "array",
       "items": {
-        "type": "object",
-        "javaType": "com.peoplepattern.api.AudienceMember"
+        "$ref": "./AudienceMember.json"
       }
     }
   }

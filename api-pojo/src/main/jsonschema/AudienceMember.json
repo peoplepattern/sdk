@@ -6,9 +6,7 @@
   "javaInterfaces": [
     "java.io.Serializable"
   ],
-  "extends": {
-    "javaType": "org.apache.streams.pojo.json.ActivityObject"
-  },
+  "extendsJavaType": "org.apache.streams.pojo.json.ActivityObject",
   "properties": {
     "_metadata": {
       "type": "object",
@@ -29,7 +27,7 @@
         "rejected_reasons": {
           "type": "array",
           "items": {
-            "javaType": "com.peoplepattern.api.AudienceMemberRejectedReason"
+            "$ref": "./AudienceMemberRejectedReason.json"
           }
         }
       }

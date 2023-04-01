@@ -6,7 +6,7 @@
   "javaInterfaces": ["java.io.Serializable"],
   "extends": {
     "description": "$ref http://streams.apache.org/streams-config/StreamsConfiguration.json",
-    "javaType": "org.apache.streams.config.StreamsConfiguration"
+    "existingJavaType": "org.apache.streams.config.StreamsConfiguration"
   },
   "additionalProperties": false,
   "properties": {

@@ -3,9 +3,9 @@
   "$schema": "http://json-schema.org/draft-03/schema",
   "id": "#",
   "type": "object",
-  "javaType" : "com.peoplepattern.reports.Ranking",
+  "javaType" : "com.peoplepattern.reports.AudienceComparisonRankingOfRankings",
   "javaInterfaces": ["java.io.Serializable"],
-  "extends": {
+  "extends":{
     "existingJavaType": "com.peoplepattern.api.RankedEntityItem"
   },
   "properties": {
@@ -15,7 +15,7 @@
     "items": {
       "type": "array",
       "items": {
-        "existingJavaType": "com.peoplepattern.api.RankedEntityItem"
+        "$ref" : "AudienceComparisonRanking.json"
       }
     }
   }

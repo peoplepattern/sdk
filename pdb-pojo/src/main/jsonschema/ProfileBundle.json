@@ -3,28 +3,22 @@
   "type": "object",
   "javaType" : "com.peoplepattern.pdb.ProfileBundle",
   "javaInterfaces": ["java.io.Serializable"],
-  "extends": {
-    "$ref": "http://streams.apache.org/streams-schemas/streams-schema-activitystreams/object.json"
-  },
+  "extendsJavaType": "org.apache.streams.pojo.json.ActivityObject",
   "description": "collection of profiles and posts with the same actor",
   "properties": {
     "$schema": {
       "type": "string",
-      "default": "http://schemata.peoplepattern.com/pdb-profile-bundle.json"
+      "default": "http://schemata.peoplepattern.com/ProfileBundle.json"
     },
     "profiles": {
       "description": "collection of profiles with the same actor",
       "type": "object",
-      "extends": {
-        "$ref": "http://streams.apache.org/streams-schemas/streams-schema-activitystreams/collection.json"
-      }
+      "extendsJavaType": "org.apache.streams.pojo.json.Collection"
     },
     "posts": {
       "description": "collection of posts with the same actor",
       "type": "object",
-      "extends": {
-        "$ref": "http://streams.apache.org/streams-schemas/streams-schema-activitystreams/collection.json"
-      }
+      "extendsJavaType": "org.apache.streams.pojo.json.Collection"
     }
   }
 }

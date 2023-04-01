@@ -1,0 +1,19 @@
+
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.reports.AudienceComparisonRanking",
+  "javaInterfaces": ["java.io.Serializable"],
+  "extends": {
+    "$ref": "Ranking.json"
+  },
+  "properties": {
+    "attribute": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    }
+  }
+}

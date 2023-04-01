@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "type": "object",
+  "javaType" : "com.peoplepattern.pdb.Profile",
+  "javaInterfaces": ["java.io.Serializable"],
+  "extends": {
+    "existingJavaType": "org.apache.streams.pojo.json.ActivityObject"
+  },
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "default": "http://schemata.peoplepattern.com/Profile.json"
+    },
+    "type": {
+      "type": "string",
+      "default": "profile"
+    },
+    "name": {
+      "type": "string"
+    },
+    "handle": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "indexed": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lang": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "protected": {
+      "type": "boolean"
+    },
+    "service_id": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "object",
+      "javaType" : "com.peoplepattern.pdb.ProfileTwitter",
+      "javaInterfaces": ["java.io.Serializable"],
+      "properties": {
+        "favourites_count": {
+          "type": "integer"
+        },
+        "followers_count": {
+          "type": "integer"
+        },
+        "friends_count": {
+          "type": "integer"
+        },
+        "id_str": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "listed_count": {
+          "type": "integer"
+        },
+        "protected": {
+          "type": "boolean"
+        },
+        "screen_name": {
+          "type": "string"
+        },
+        "statuses_count": {
+          "type": "integer"
+        },
+        "verified": {
+          "type": "boolean"
+        }
+      }
+    },
+    "enrichments": {
+      "$ref": "./Enrichments.json"
+    },
+    "posts": {
+      "$ref": "./ProfilePosts.json"
+    }
+  }
+}

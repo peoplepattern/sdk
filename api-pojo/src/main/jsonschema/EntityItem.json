@@ -5,6 +5,6 @@
   "javaType" : "com.peoplepattern.api.EntityItem",
   "javaInterfaces": ["java.io.Serializable"],
   "extends": {
-    "$ref": "http://streams.apache.org/streams-schemas/streams-schema-activitystreams/object.json"
+    "existingJavaType": "org.apache.streams.pojo.json.ActivityObject"
   }
 }

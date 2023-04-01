@@ -6,7 +6,6 @@
   "javaInterfaces": ["java.io.Serializable"],
   "description": "LookupResponse is a Map of objects by id",
   "additionalProperties" : {
-    "type": "object",
-    "javaType": "org.apache.streams.pojo.json.ActivityObject"
+    "existingJavaType": "org.apache.streams.pojo.json.ActivityObject"
   }
 }

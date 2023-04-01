@@ -4,7 +4,7 @@
   "javaType" : "com.peoplepattern.pdb.PostEnrichments",
   "javaInterfaces": ["java.io.Serializable"],
   "extends": {
-    "$ref": "pdb-enrichments.json"
+    "$ref": "./Enrichments.json"
   },
   "properties": {
     "languages": {

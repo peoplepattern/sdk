@@ -24,7 +24,7 @@
             "$ref": "./SearchRequest.json/#/properties/querySource"
         },
         "strategy": {
-            "javaType": "com.peoplepattern.pdb.settings.AggregationStrategy"
+            "$ref": "./AggregationStrategy.json"
         }
     }
 }

@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "id": "#",
+    "type": "object",
+    "javaType" : "com.peoplepattern.reports.AudienceComparisonResult",
+    "javaInterfaces": ["java.io.Serializable"],
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "default": "http://schemata.peoplepattern.com/AudienceComparisonResult.json"
+        },
+        "audiences": {
+            "javaType": "com.peoplepattern.reports.AudienceComparisonResultAudiences",
+            "items": {
+                "type": "array",
+                "items": {
+                    "$ref": "AudienceComparisonResultAudience.json"
+                }
+            }
+        },
+        "audienceComparisonRankings": {
+            "$ref": "AudienceComparisonRankingOfRankings.json"
+        }
+    }
+}

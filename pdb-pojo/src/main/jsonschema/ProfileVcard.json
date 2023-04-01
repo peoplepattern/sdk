@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-03/schema",
   "type": "object",
-  "javaType" : "com.peoplepattern.pdb.VCard",
+  "javaType" : "com.peoplepattern.pdb.ProfileVcard",
   "javaInterfaces": ["java.io.Serializable"],
   "properties": {
     "anniversary": {

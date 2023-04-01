@@ -52,6 +52,30 @@
             <plugin>
                 <groupId>org.apache.streams.plugins</groupId>
                 <artifactId>streams-plugin-pojo</artifactId>
+                <version>${streams.version}</version>
+<!--                <configuration>-->
+<!--                    <sourceDirectory>src/main/jsonschema</sourceDirectory>-->
+<!--                </configuration>-->
+<!--                <configuration>-->
+<!--                    <sourcePaths>-->
+<!--                        <sourcePath>src/main/jsonschema</sourcePath>-->
+<!--                    </sourcePaths>-->
+<!--                </configuration>-->
+<!--                <configuration>-->
+<!--                    <sourcePaths>-->
+<!--                        <sourcePath>./src/main/jsonschema/Enrichments.json</sourcePath>-->
+<!--                        <sourcePath>./src/main/jsonschema/Post.json</sourcePath>-->
+<!--                        <sourcePath>./src/main/jsonschema/PostEnrichments.json</sourcePath>-->
+<!--                        <sourcePath>./src/main/jsonschema/Demographics.json</sourcePath>-->
+<!--                        <sourcePath>./src/main/jsonschema/ExtendedDemographics.json</sourcePath>-->
+<!--                        <sourcePath>./src/main/jsonschema/ProfilePosts.json</sourcePath>-->
+<!--                        <sourcePath>./src/main/jsonschema/ProfilePsychographics.json</sourcePath>-->
+<!--                        <sourcePath>./src/main/jsonschema/ProfileVcard.json</sourcePath>-->
+<!--                        <sourcePath>./src/main/jsonschema/ProfileEnrichments.json</sourcePath>-->
+<!--                        <sourcePath>./src/main/jsonschema/Profile.json</sourcePath>-->
+<!--                        <sourcePath>./src/main/jsonschema/Portrait.json</sourcePath>-->
+<!--                    </sourcePaths>-->
+<!--                </configuration>-->
                 <dependencies>
                     <dependency>
                         <groupId>com.peoplepattern</groupId>

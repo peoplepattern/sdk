@@ -36,6 +36,9 @@
                 <groupId>org.apache.streams.plugins</groupId>
                 <artifactId>streams-plugin-pojo</artifactId>
                 <version>${streams.version}</version>
+                <configuration>
+                    <targetPackage>com.peoplepattern</targetPackage>
+                </configuration>
                 <dependencies>
                     <dependency>
                         <groupId>com.peoplepattern</groupId>

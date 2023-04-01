@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "$license": [
+        "http://www.apache.org/licenses/LICENSE-2.0"
+    ],
+    "id": "#",
+    "type": "object",
+    "javaType": "com.peoplepattern.pdb.ExtendedDemographics",
+    "javaInterfaces": ["java.io.Serializable"],
+    "properties": {
+        "lgbtq" : {
+            "type": "boolean"
+        },
+        "married" : {
+            "type": "boolean"
+        },
+        "occupation" : {
+            "type": "string"
+        },
+        "parent" : {
+            "type": "boolean"
+        },
+        "politics" : {
+            "existingJavaType": "com.peoplepattern.datasci.Politics",
+            "seeAlso": "http://schemata.peoplepattern.com/Politics.json"
+        },
+        "salary" : {
+            "existingJavaType": "com.peoplepattern.datasci.Salary",
+            "seeAlso": "http://schemata.peoplepattern.com/Salary.json"
+        },
+        "religion" : {
+            "existingJavaType": "com.peoplepattern.datasci.Religion",
+            "seeAlso": "http://schemata.peoplepattern.com/Religion.json"
+        },
+        "sexual_orientation" : {
+            "existingJavaType": "com.peoplepattern.datasci.SexualOrientation",
+            "seeAlso": "http://schemata.peoplepattern.com/SexualOrientation.json"
+        },
+        "student" : {
+            "existingJavaType": "com.peoplepattern.datasci.Student",
+            "seeAlso": "http://schemata.peoplepattern.com/Student.json"
+        }
+    }
+}

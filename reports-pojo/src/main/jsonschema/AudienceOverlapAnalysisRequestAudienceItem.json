@@ -2,16 +2,16 @@
     "$schema": "http://json-schema.org/draft-03/schema",
     "id": "#",
     "type": "object",
-    "javaType" : "com.peoplepattern.reports.AudienceInfluencersReportRequest",
+    "javaType" : "com.peoplepattern.reports.AudienceOverlapAnalysisRequestAudienceItem",
     "javaInterfaces": ["java.io.Serializable"],
     "additionalProperties": false,
     "properties": {
         "$schema": {
             "type": "string",
-            "default": "http://schemata.peoplepattern.com/AudienceSummaryReportRequest.json"
+            "default": "http://schemata.peoplepattern.com/AudienceOverlapAnalysisRequestAudienceItem.json"
         },
-        "audience": {
-            "existingJavaType" : "com.peoplepattern.api.Audience"
+        "id": {
+            "type": "string"
         }
     }
 }

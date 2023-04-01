@@ -11,12 +11,11 @@
     },
     "audience": {
       "description": "explicit audience supplied by caller",
-      "$ref": "http://schemata.peoplepattern.com/Audience.json",
-      "javaType" : "com.peoplepattern.api.Audience"
+      "existingJavaType" : "com.peoplepattern.api.Audience"
     },
     "seed": {
       "description": "explicit seed account declaration supplied by caller",
-      "$ref": "http://schemata.peoplepattern.com/Audience.json"
+      "existingJavaType" : "com.peoplepattern.api.Audience"
     },
     "service": {
       "description": "deprecated, replaced by platform",
