@@ -32,7 +32,7 @@
       "required": true
     },
     "audience": {
-      "$ref": "http://schemata.peoplepattern.com/Audience.json"
+      "$ref": "./Audience.json"
     }
   }
 }

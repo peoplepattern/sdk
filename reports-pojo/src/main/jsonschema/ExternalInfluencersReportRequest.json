@@ -14,7 +14,7 @@
             "existingJavaType" : "com.peoplepattern.api.Audience"
         },
         "benchmark": {
-            "$ref": "http://schemata.peoplepattern.com/Benchmark.json"
+            "$ref": "./Benchmark.json"
         }
     }
 }

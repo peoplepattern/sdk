@@ -9,8 +9,8 @@ import org.apache.juneau.rest.client.remote.RemoteMethod;
 
 object Resources {
     final val ROOT_PATH = "/resources"
-    final val GROUP_PATH = "/{resourceGroup}"
-    final val RESOURCE_PATH = "/{resourceGroup}/{resourceKey}"
+    final val FOLDER_PATH = "/{folder}"
+    final val FILE_PATH = "/{file}"
 }
 
 /**
@@ -19,18 +19,19 @@ object Resources {
 @RemoteInterface(path = "https://api.peoplepattern.com")
 trait Resources {
 
-    @RemoteMethod(method = "GET", path = Resources.ROOT_PATH + Resources.GROUP_PATH)
-    def listResources(resourceGroup : String) : Collection[String];
+    @RemoteMethod(method = "GET", path = Resources.ROOT_PATH + Resources.FOLDER_PATH)
+    def list(folder : String) : Collection[String];
 
-    @RemoteMethod(method = "GET", path = Resources.ROOT_PATH + Resources.RESOURCE_PATH)
-    def getResource(resourceGroup : String, resourceKey : String) : Optional[String]
+    @RemoteMethod(method = "GET", path = Resources.ROOT_PATH + Resources.FOLDER_PATH + Resources.FILE_PATH)
+    def get(folder : String, file : String) : Optional[String]
 
-    @RemoteMethod(method = "POST", path = Resources.ROOT_PATH + Resources.GROUP_PATH)
-    def saveResource(format : String, resourceGroup : String, resource : String) : Optional[String];
+    @RemoteMethod(method = "PUT", path = Resources.ROOT_PATH + Resources.FOLDER_PATH + Resources.FILE_PATH)
+    def save(folder : String, file : String, content : String, format : String) : Boolean;
 
-    @RemoteMethod(method = "PUT", path = Resources.ROOT_PATH + Resources.RESOURCE_PATH)
-    def saveResource(format : String, resourceGroup : String, resourceKey : String, resource : String) : Boolean;
+    @RemoteMethod(method = "POST")
+    def copy(fromPath : String, toPath : String ) : Boolean;
 
-    def linkResource(format : String, fromGroup : String, fromKey : String, toGroup : String, toKey : String) : Boolean;
+    @RemoteMethod(method = "OPTIONS", path = Resources.ROOT_PATH + Resources.FOLDER_PATH + Resources.FILE_PATH)
+    def contentType(folder : String, file : String) : Optional[String]
 
 }

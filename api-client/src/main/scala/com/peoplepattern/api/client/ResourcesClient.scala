@@ -34,28 +34,23 @@ class ResourcesClient extends PeoplePattern
 //  override def validateRequest(contenttype: String, resourceGroup: String, resourceKey: String, schema: String): ValidateResponse = {
 //    throw new NotImplementedError()
 //  }
-  override def listResources(resourceGroup: String): util.Collection[String] = {
+  override def list(folder : String): util.Collection[String] = {
     throw new NotImplementedError()
   }
 
-  override def getResource(resourceGroup: String, resourceKey: String): Optional[String] = {
-    val call = restClient.doGet(Resources.ROOT_PATH + "/" + resourceGroup + "/" + resourceKey)
-    val attempt = Try(call.getResponse)
-    if( attempt.isFailure ) return Optional.empty();
-    val entity: HttpEntity = attempt.get.getEntity
-    val entityString: String = EntityUtils.toString(entity)
-    Optional.of(entityString);
-  }
-
-  override def saveResource(format: String, resourceGroup: String, resource: String): Optional[String] = {
+  def get(folder : String, file : String) : Optional[String] = {
     throw new NotImplementedError()
   }
 
-  override def saveResource(format: String, resourceGroup: String, resourceKey: String, resource: String): Boolean = {
+  def save(folder : String, file : String, content : String, format : String) : Boolean = {
+    throw new NotImplementedError()
+  }
+  def copy(fromPath : String, toPath : String ) : Boolean = {
     throw new NotImplementedError()
   }
 
-  override def linkResource(format: String, fromGroup: String, fromKey: String, toGroup: String, toKey: String): Boolean = {
+  def contentType(folder : String, file : String) : Optional[String] = {
     throw new NotImplementedError()
   }
+
 }
