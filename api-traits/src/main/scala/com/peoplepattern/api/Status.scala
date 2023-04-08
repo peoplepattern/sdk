@@ -13,9 +13,11 @@ object Status {
 trait Status {
 
   @RemoteMethod(method = "GET", path = Status.PATH)
+  @throws(classOf[Exception])
   def getStatus(statusRequest: StatusRequest): StatusResponse
 
   @RemoteMethod(method = "POST", path = Status.PATH)
+  @throws(classOf[Exception])
   def setStatus(status: StatusResponse): Unit
 
 }

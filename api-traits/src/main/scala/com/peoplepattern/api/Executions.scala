@@ -9,6 +9,7 @@ import org.apache.juneau.rest.client.remote.RemoteMethod
 trait Executions {
 
   @RemoteMethod(method = "POST", path = "/executions")
+  @throws(classOf[Exception])
   def executions(request: ExecutionsRequest): ExecutionsResponse
 
 }

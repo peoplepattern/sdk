@@ -3,41 +3,7 @@
     "id": "#",
     "type": "object",
     "javaType" : "com.peoplepattern.api.ExecuteResponse",
-    "properties": {
-        "configuration": {
-            "type": "string",
-            "description": "configuration for job"
-        },
-        "execution": {
-            "type": "integer",
-            "description": "unique ID of stream (26 char hash)"
-        },
-        "externalId": {
-            "type": "string",
-            "description": "externalId to track job",
-            "required": false
-        },
-        "job": {
-            "type": "string",
-            "description": "job name of the execution"
-        },
-        "labels": {
-            "type": "array",
-            "description": "labels to apply to job",
-            "required": false,
-            "items": {
-                "type": "string"
-            }
-        },
-        "status": {
-            "type": "string",
-            "description": "current status of the execution",
-            "required": true,
-            "enum": [
-                "FAILED",
-                "INVALID_REQUEST",
-                "SUBMITTED"
-            ]
-        }
+    "extends": {
+        "$ref": "./StatusResponse.json"
     }
 }

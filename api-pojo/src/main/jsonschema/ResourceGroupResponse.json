@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.api.ResourceGroupResponse",
+  "javaInterfaces": ["java.io.Serializable"],
+  "properties": {
+    "totalItems": {
+      "type": "integer"
+    },
+    "items": {
+      "type": "array",
+      "description": "files",
+      "required": true,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

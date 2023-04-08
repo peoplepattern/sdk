@@ -34,7 +34,7 @@ class ResourcesClient extends PeoplePattern
 //  override def validateRequest(contenttype: String, resourceGroup: String, resourceKey: String, schema: String): ValidateResponse = {
 //    throw new NotImplementedError()
 //  }
-  override def list(folder : String): util.Collection[String] = {
+  override def list(folder : String): util.List[String] = {
     throw new NotImplementedError()
   }
 
@@ -45,11 +45,12 @@ class ResourcesClient extends PeoplePattern
   def save(folder : String, file : String, content : String, format : String) : Boolean = {
     throw new NotImplementedError()
   }
+
   def copy(fromPath : String, toPath : String ) : Boolean = {
     throw new NotImplementedError()
   }
 
-  def contentType(folder : String, file : String) : Optional[String] = {
+  def check(folder : String, file : String) : Optional[String] = {
     throw new NotImplementedError()
   }
 

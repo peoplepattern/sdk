@@ -13,6 +13,7 @@ object Execute {
 trait Execute {
 
   @RemoteMethod(method = "POST", path = Execute.PATH)
+  @throws(classOf[Exception])
   def execute(request: ExecuteRequest): ExecuteResponse
 
 }

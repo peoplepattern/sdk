@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "#",
+  "type": "object",
+  "javaType" : "com.peoplepattern.api.ResourceArtifactRequest",
+  "javaInterfaces": ["java.io.Serializable"],
+  "properties": {
+    "resource_group": {
+      "type": "string",
+      "description": "resourceGroup",
+      "required": true
+    },
+    "resource_artifact": {
+      "type": "string",
+      "description": "resourceArtifact",
+      "required": true
+    },
+    "content_type": {
+      "type": "string",
+      "description": "contentType",
+      "required": false
+    }
+  }
+}
